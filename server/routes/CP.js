@@ -6,10 +6,10 @@ const router = express.Router();
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "uploads/"); // Directory to store the uploaded images
+    cb(null, "uploads/"); 
   },
   filename: (req, file, cb) => {
-    cb(null, Date.now() + path.extname(file.originalname)); // Append current timestamp to filename
+    cb(null, Date.now() + path.extname(file.originalname)); 
   },
 });
 
@@ -26,7 +26,7 @@ router.post("/register-cp", upload.single("image"), async (req, res) => {
     phoneNumber,
     imageUrl,
   } = req.body;
-  const imagePath = req.file ? req.file.path : null; // Get the image path
+  const imagePath = req.file ? req.file.path : null; 
 
   try {
     const sponserData = req.body;
@@ -61,7 +61,7 @@ router.post("/register-cp", upload.single("image"), async (req, res) => {
 router.get("/CP", async (req, res) => {
   try {
     const CPs = await CommunityPartner.find(); 
-    res.status(200).json(CPs); // Send the data as a JSON response
+    res.status(200).json(CPs); 
   } catch (error) {
     console.error("Error fetching community partners:", error);
     res
