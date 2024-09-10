@@ -24,12 +24,12 @@ function App() {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 2500); // Change slide every 2.5 seconds
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    const interval = setInterval(nextSlide, 2500); 
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative w-[80%] m-auto overflow-hidden">
+    <div className="relative w-[100%] m-auto overflow-hidden">
       <div
         className="flex transition-transform duration-300"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -37,7 +37,7 @@ function App() {
         {slides.map((slide, index) => (
           <div key={index} className="w-full flex-shrink-0 relative">
             <img
-              className="w-full sm:h-[100px] md:h-[250px] lg:h-[350px]"
+              className="w-full sm:h-[100px] md:h-[250px] lg:h-screen"
               src={slide}
               alt={`Slide ${index + 1}`}
             />
