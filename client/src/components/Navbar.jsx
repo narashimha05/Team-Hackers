@@ -13,24 +13,24 @@ const Navbar = () => {
           {!isOpen ? (
             <button
               onClick={() => setIsOpen(true)}
-              className="flex mt-4 px-3 mx-2 py-2 border rounded  text-black border-gray-400 "
+              className="flex px-3 mx-2 py-2 border rounded  text-black border-gray-400 "
             >
               <FiMenu />
             </button>
           ) : (
             <button
               onClick={() => setIsOpen(false)}
-              className="flex mt-4 px-3 mx-2 py-2 border rounded text-red-600 border-red-500"
+              className="flex px-3 mx-2 py-2 border rounded text-red-600 border-red-500"
             >
               <ImCross />
             </button>
           )}
 
           {isOpen && (
-            <ul className=" mt-5 md:hidden bg-blue-950 grid grid-rows-4 pt-10 text-center">
+            <ul className=" mt-5 md:hidden bg-gray-200 text-blue-950 grid grid-rows-4 pt-10 text-center font-poppins">
               <li className=" mb-10">
                 <a
-                  className="p-4 rounded-2xl  hover:font-bold text-white font-medium font-poppins"
+                  className="p-4 rounded-2xl hover:font-bold font-medium "
                   href="#home"
                 >
                   Home
@@ -38,7 +38,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="p-4 rounded-2xl hover:font-bold text-white font-medium font-serif"
+                  className="p-4 rounded-2xl hover:font-bold font-medium"
                   href="#about"
                 >
                   About
@@ -46,7 +46,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="p-4 rounded-2xl hover:font-bold text-white font-medium font-serif"
+                  className="p-4 rounded-2xl hover:font-bold font-medium"
                   href="#services"
                 >
                   Services
@@ -54,7 +54,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="p-4 rounded-2xl hover:font-bold text-white font-medium font-serif"
+                  className="p-4 rounded-2xl hover:font-bold font-medium"
                   href="#contact"
                 >
                   Contact
@@ -64,10 +64,10 @@ const Navbar = () => {
           )}
         </div>
 
-        <ul className="hidden md:flex gap-16 bg-blue-950 justify-end text-center p-5">
+        <ul className="hidden md:flex gap-16 bg-gray-200 justify-end text-center p-5 text-blue-950">
   <li>
     <a
-      className="p-4 rounded-2xl hover:font-bold text-white font-medium font-poppins "
+      className="p-4 rounded-2xl hover:font-bold font-medium font-poppins "
       href="#home"
     >
       Home
@@ -75,7 +75,7 @@ const Navbar = () => {
   </li>
   <li>
     <a
-      className="p-4 rounded-2xl hover:font-bold text-white font-medium font-poppins"
+      className="p-4 rounded-2xl hover:font-bold font-medium font-poppins"
       href="#about"
     >
       About
@@ -83,7 +83,7 @@ const Navbar = () => {
   </li>
   <li>
     <a
-      className="p-4 rounded-2xl hover:font-bold text-white font-medium font-poppins"
+      className="p-4 rounded-2xl hover:font-bold font-medium font-poppins"
       href="#services"
     >
       Services
@@ -91,7 +91,7 @@ const Navbar = () => {
   </li>
   <li>
     <a
-      className="p-4 rounded-2xl hover:font-bold text-white font-medium font-poppins "
+      className="p-4 rounded-2xl hover:font-bold font-medium font-poppins "
       href="#contact"
     >
       Contact
