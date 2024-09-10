@@ -9,7 +9,7 @@ const CPList = () => {
   useEffect(() => {
     const fetchSponsors = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/v1/api/CP');
+        const response = await axios.get('https://team-hackers.onrender.com/v1/api/CP');
         console.log(response.data);
         setSponsors(response.data);
         setLoading(false);

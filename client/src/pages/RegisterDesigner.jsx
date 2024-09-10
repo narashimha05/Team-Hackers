@@ -24,7 +24,7 @@ const RegisterDesigner = () => {
                 ProjectLink
             };
 
-            const response = await axios.post('http://localhost:5000/v1/api/register-designer', formData);
+            const response = await axios.post('https://team-hackers.onrender.com/v1/api/register-designer', formData);
             console.log('Designer registered successfully:', response.data);
             navigate('/mainpage');
         } catch (error) {

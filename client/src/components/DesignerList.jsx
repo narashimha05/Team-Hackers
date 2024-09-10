@@ -9,7 +9,7 @@ const DesignerList = () => {
     useEffect(() => {
       const fetchSponsors = async () => {
         try {
-          const response = await axios.get('http://localhost:5000/v1/api/designer');
+          const response = await axios.get('https://team-hackers.onrender.com/v1/api/designer');
           console.log(response.data);
           setSponsors(response.data);
           setLoading(false);
