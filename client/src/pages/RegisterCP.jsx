@@ -57,7 +57,7 @@ const RegisterCP = () => {
       };
 
       // Send form data to your backend
-      const response = await axios.post('https://hackers-sndc.onrender.com/v1/api/register-cp', formData);
+      const response = await axios.post('http://localhost:5000/v1/api/register-cp', formData);
       console.log('Community Partner registered successfully:', response.data);
       navigate('/mainpage');
       // Optionally, clear the form or redirect after successful submission

@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Carousel from '../components/Carousel/Carousel'
 import About from '../components/About'
-// import Tab from '../components/Tab'
+import Tab from '../components/Tab'
 
 import Footer from '../components/Footer'
 
@@ -14,7 +14,7 @@ const Mainpage = () => {
     <Navbar/>
     <Carousel/>
     <About/>
-    {/* <Tab/> */}
+    <Tab/>
     <Faq/>
     <Footer/>
     </div> )

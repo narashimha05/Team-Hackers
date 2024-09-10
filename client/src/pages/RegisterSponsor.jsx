@@ -56,7 +56,7 @@ const RegisterSponsor = () => {
       };
 
       // Send form data to your backend
-      const response = await axios.post('https://hackers-sndc.onrender.com/v1/api/register-sponsor', formData);
+      const response = await axios.post('http://localhost:5000/v1/api/register-sponsor', formData);
       console.log('Sponsor registered successfully:', response.data);
       navigate('/mainpage');
       // Optionally, clear the form or redirect after successful submission

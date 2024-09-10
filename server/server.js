@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 // mongodb+srv://chinnarinarashimha:Narashimha123@cluster0.dynoifc.mongodb.net/
 //TeamHackers
-mongoose.connect("mongodb+srv://chinnarinarashimha:TeamHackers@cluster0.dynoifc.mongodb.net/HackersData")
+mongoose.connect("mongodb+srv://chinnarinarashimha:qwertyasdfg@cluster0.dynoifc.mongodb.net/HackersData")
     .then(() => console.log('MongoDB connected'))
     .catch((err) => console.log('MongoDB connection error: ', err));
 
