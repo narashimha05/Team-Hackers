@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react';
 import becomeac from './becomeac.jpg';
 import becomeas from './becomeas.jpg';
 import collobarateasc from './collaboratewithc.jpg'
+import freelanceasd from './freelanceasd.jpg'
 function App() {
   const slides = [
     becomeac,
     becomeas,
     collobarateasc,
+    freelanceasd
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
